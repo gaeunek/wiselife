@@ -23,6 +23,8 @@ public class MeetingDTO {
 		private String unit;
 		private int mainCategory;
 		private String tags;
+		private String area1;
+		private String area2;
 	}
 	
 	@Getter @Setter
@@ -61,6 +63,17 @@ public class MeetingDTO {
 		private int viewCnt;
 		private int mainCategory;
 		private String tags;
+		private int score;
+	}
+	
+	@Getter @Setter
+	public static class CardMeeting {
+		private String title;
+		private String tags; //태그는 3개만
+		private int score;
+		private int isLike; //0 : 좋아요(X), 1 : 좋아요(O)
+		private String area1;
+		private String area2;
 	}
 	
 	@Getter @Setter
